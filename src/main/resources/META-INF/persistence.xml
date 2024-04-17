@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+    <persistence-unit name="default">
+        <class>zti.zti_cicd_demo.model.Order</class>
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://cornelius.db.elephantsql.com:5432/sohgnjeg"/>
+            <property name="javax.persistence.jdbc.user" value="sohgnjeg"/>
+            <property name="javax.persistence.jdbc.password" value="4xA5XGSFSW35q5EmXPZdujCp9abDlj5e"/>
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+        </properties>
+    </persistence-unit>
+</persistence>
