@@ -4,11 +4,13 @@ import jakarta.enterprise.context.ApplicationScoped;
 import zti.zti_cicd_demo.model.Database;
 import zti.zti_cicd_demo.model.Order;
 import jakarta.inject.Inject;
+import zti.zti_cicd_demo.qualificators.FastPayment;
 
 @ApplicationScoped
 public class OrderService {
 
     @Inject
+    @FastPayment
     private PaymentService paymentService;
 
     @Inject
