@@ -3,7 +3,7 @@ package zti.zti_cicd_demo.services;
 import javax.enterprise.inject.Alternative;
 
 @Alternative
-public class AlternativePaymentService extends PaymentService {
+public class AlternativePaymentService implements PaymentService {
 
     @Override
     public void processPayment(int orderNumber) {
